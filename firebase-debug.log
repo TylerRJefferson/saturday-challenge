@@ -1,0 +1,808 @@
+[debug] [2022-10-22T14:06:44.860Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T14:06:44.861Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-10-22T14:06:44.861Z] CLI Version:   11.15.0
+[debug] [2022-10-22T14:06:44.861Z] Platform:      darwin
+[debug] [2022-10-22T14:06:44.861Z] Node Version:  v16.17.1
+[debug] [2022-10-22T14:06:44.861Z] Time:          Sat Oct 22 2022 10:06:44 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-10-22T14:06:44.862Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-22T14:06:44.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T14:06:44.892Z] > authorizing via signed-in user (tylerrjefferson00@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-10-22T14:06:45.088Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2022-10-22T14:06:45.088Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-22T14:06:45.089Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-10-22T14:06:45.092Z] [hub] writing locator at /var/folders/gf/jtyfhkbx1175n_vr45yx0wtr0000gn/T/hub-saturday-challenge.json
+[debug] [2022-10-22T14:06:45.177Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-22T14:06:45.177Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-22T14:06:45.177Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-10-22T14:06:45.183Z] defaultcredentials: writing to file /Users/tyjeff00/.config/firebase/tylerrjefferson00_gmail_com_application_default_credentials.json
+[debug] [2022-10-22T14:06:45.187Z] Setting GAC to /Users/tyjeff00/.config/firebase/tylerrjefferson00_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/tyjeff00/.config/firebase/tylerrjefferson00_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-22T14:06:45.189Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge/adminSdkConfig [none]
+[debug] [2022-10-22T14:06:45.628Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge/adminSdkConfig 200
+[debug] [2022-10-22T14:06:45.628Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge/adminSdkConfig {"projectId":"saturday-challenge","storageBucket":"saturday-challenge.appspot.com","locationId":"us-central"}
+[debug] [2022-10-22T14:06:45.659Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/saturday-challenge/sites 
+[debug] [2022-10-22T14:06:46.244Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/saturday-challenge/sites 200
+[debug] [2022-10-22T14:06:46.244Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/saturday-challenge/sites {"sites":[{"name":"projects/saturday-challenge/sites/saturday-challenge","defaultUrl":"https://saturday-challenge.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-22T14:06:46.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge/webApps/-/config [none]
+[debug] [2022-10-22T14:06:46.659Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge/webApps/-/config 200
+[debug] [2022-10-22T14:06:46.660Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge/webApps/-/config {"projectId":"saturday-challenge","storageBucket":"saturday-challenge.appspot.com","locationId":"us-central","apiKey":"AIzaSyB-BUdwQ6USyXzdrbFZxIz1SMeSSM6uUP4","authDomain":"saturday-challenge.firebaseapp.com","messagingSenderId":"952611006239"}
+[debug] [2022-10-22T14:06:46.683Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge [none]
+[debug] [2022-10-22T14:06:46.885Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge 200
+[debug] [2022-10-22T14:06:46.885Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/saturday-challenge {"projectId":"saturday-challenge","projectNumber":"952611006239","displayName":"saturday-challenge","name":"projects/saturday-challenge","resources":{"hostingSite":"saturday-challenge","storageBucket":"saturday-challenge.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_cae8e756-a944-4af0-a43e-54e355eb576c"}
+[info] i  hosting[saturday-challenge]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[saturday-challenge]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[debug] [2022-10-22T14:06:46.948Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-22T14:06:46.948Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-22T14:06:46.949Z] Starting Emulator UI with command {"binary":"node","args":["/Users/tyjeff00/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/tyjeff00/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-22T14:06:47.016Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/tyjeff00/BocaCode/saturday-challenge/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/tyjeff00/BocaCode/saturday-challenge/functions\" for Cloud Functions..."}}
+[debug] [2022-10-22T14:06:47.219Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:06:47.802Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:06:47.802Z] Building nodejs source
+[debug] [2022-10-22T14:06:47.802Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:06:47.803Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:06:47.995Z] Serving at port 9005
+
+[debug] [2022-10-22T14:06:48.021Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-22T14:06:48.024Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5002 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:07:34.366Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:07:34.369Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:07:34.369Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:07:34.370Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:07:34.372Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 404
+[debug] [2022-10-22T14:07:34.372Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:07:34 +0000] "GET /test HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:07:34 +0000] \"GET /test HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /favicon.ico to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:07:34.456Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/favicon.ico 
+[debug] [2022-10-22T14:07:34.458Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:07:34.458Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:07:34.458Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:07:34.459Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/favicon.ico 404
+[debug] [2022-10-22T14:07:34.459Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/favicon.ico [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:07:34 +0000] "GET /favicon.ico HTTP/1.1" 404 62 "http://127.0.0.1:5002/test" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:07:34 +0000] \"GET /favicon.ico HTTP/1.1\" 404 62 \"http://127.0.0.1:5002/test\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:09:23.945Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:09:23.946Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:09:23.947Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:09:23.947Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:09:23.948Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 404
+[debug] [2022-10-22T14:09:23.948Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:09:23 +0000] "GET /test HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:09:23 +0000] \"GET /test HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:09:24.531Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:09:24.533Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:09:24.533Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:09:24.534Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:09:24.535Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 404
+[debug] [2022-10-22T14:09:24.535Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:09:24 +0000] "GET /test HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:09:24 +0000] \"GET /test HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:09:26.096Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:09:26.098Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:09:26.098Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:09:26.098Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:09:26.099Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 404
+[debug] [2022-10-22T14:09:26.099Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:09:26 +0000] "GET /test HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:09:26 +0000] \"GET /test HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:09:32.811Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 
+[debug] [2022-10-22T14:09:32.813Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:09:32.813Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:09:32.813Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:09:32.814Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 404
+[debug] [2022-10-22T14:09:32.815Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:09:32 +0000] "GET / HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:09:32 +0000] \"GET / HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:09:38.108Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:09:38.110Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:09:38.110Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:09:38.111Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:09:38.112Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 404
+[debug] [2022-10-22T14:09:38.112Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:09:38 +0000] "GET /test HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:09:38 +0000] \"GET /test HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:10:14.352Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 
+[debug] [2022-10-22T14:10:14.354Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:10:14.354Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:10:14.354Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:10:14.355Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 404
+[debug] [2022-10-22T14:10:14.355Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:10:14 +0000] "GET / HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:10:14 +0000] \"GET / HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:10:28.298Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 
+[debug] [2022-10-22T14:10:28.300Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:10:28.300Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:10:28.301Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:10:28.301Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 404
+[debug] [2022-10-22T14:10:28.301Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:10:28 +0000] "GET / HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:10:28 +0000] \"GET / HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-22T14:12:02.941Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:12:03.945Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:12:04.703Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:12:04.703Z] Building nodejs source
+[debug] [2022-10-22T14:12:04.703Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:12:04.704Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:12:04.803Z] Serving at port 9005
+
+[debug] [2022-10-22T14:12:04.809Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2022-10-22T14:12:04.810Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Cannot use import statement ou ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Cannot use import statement ou ... \n                                         ^"}
+[debug] [2022-10-22T14:12:04.811Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module"}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:12:13.643Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 
+[debug] [2022-10-22T14:12:13.644Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:12:13.644Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:12:13.645Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:12:13.645Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 404
+[debug] [2022-10-22T14:12:13.645Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:12:13 +0000] "GET / HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:12:13 +0000] \"GET / HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting / to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:12:16.548Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 
+[debug] [2022-10-22T14:12:16.549Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:12:16.550Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:12:16.551Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:12:16.552Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ 404
+[debug] [2022-10-22T14:12:16.552Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/ [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:12:16 +0000] "GET / HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:12:16 +0000] \"GET / HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:12:26.515Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:12:26.517Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:12:26.517Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:12:26.517Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:12:26.518Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 404
+[debug] [2022-10-22T14:12:26.518Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:12:26 +0000] "GET /test HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:12:26 +0000] \"GET /test HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-22T14:14:25.745Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:14:26.749Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:14:27.317Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:14:27.317Z] Building nodejs source
+[debug] [2022-10-22T14:14:27.317Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:14:27.318Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:14:27.318Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:14:27.398Z] Serving at port 9005
+
+[debug] [2022-10-22T14:14:27.403Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2022-10-22T14:14:27.403Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Cannot use import statement ou ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Cannot use import statement ou ... \n                                         ^"}
+[debug] [2022-10-22T14:14:27.404Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module"}}
+[debug] [2022-10-22T14:14:28.321Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:14:28.856Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:14:28.856Z] Building nodejs source
+[debug] [2022-10-22T14:14:28.856Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:14:28.857Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:14:28.925Z] Serving at port 9005
+
+[debug] [2022-10-22T14:14:29.035Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2022-10-22T14:14:29.035Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Cannot use import statement ou ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Cannot use import statement ou ... \n                                         ^"}
+[debug] [2022-10-22T14:14:29.038Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module"}}
+[debug] [2022-10-22T14:16:01.719Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/package.json changed, reloading triggers"}}
+[debug] [2022-10-22T14:16:02.724Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:16:03.740Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:16:03.740Z] Building nodejs source
+[debug] [2022-10-22T14:16:03.740Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:16:03.741Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:16:03.839Z] Serving at port 9005
+
+[debug] [2022-10-22T14:16:03.882Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-22T14:16:03.885Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] ✔  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/saturday-challenge/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/saturday-challenge/us-central1/api)."}}
+[debug] [2022-10-22T14:16:09.445Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:16:10.448Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:16:11.477Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:16:11.477Z] Building nodejs source
+[debug] [2022-10-22T14:16:11.478Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:16:11.478Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:16:11.573Z] Serving at port 9005
+
+[debug] [2022-10-22T14:16:11.613Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-22T14:16:11.615Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:16:14.079Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:16:14.081Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:16:14.081Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:16:14.081Z] Accepted request GET /saturday-challenge/us-central1/api/test --> us-central1-api
+[debug] [2022-10-22T14:16:14.083Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-22T14:16:14.083Z] [functions] Got req.url=/saturday-challenge/us-central1/api/test, mapping to path=/test {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/saturday-challenge/us-central1/api/test, mapping to path=/test"}}
+[debug] [2022-10-22T14:16:14.095Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-22T14:16:14.097Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-22T14:16:14.646Z] [runtime-status] [44980] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T14:16:14.646Z] [runtime-status] [44980] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:16:14.647Z] [runtime-status] [44980] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-22T14:16:14.647Z] [runtime-status] [44980] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:16:14.660Z] [runtime-status] [44980] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-22T14:16:14.660Z] [runtime-status] [44980] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-22T14:16:14.660Z] [runtime-status] [44980] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:16:14.661Z] [runtime-status] [44980] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T14:16:14.661Z] [runtime-status] [44980] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:16:14.661Z] [runtime-status] [44980] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-22T14:16:14.703Z] [runtime-status] [44980] Functions runtime initialized. {"cwd":"/Users/tyjeff00/BocaCode/saturday-challenge/functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Functions runtime initialized. {\"cwd\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-10-22T14:16:14.703Z] [runtime-status] [44980] Listening to port: /var/folders/gf/jtyfhkbx1175n_vr45yx0wtr0000gn/T/fire_emu_fff90dd1f755766b.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [44980] Listening to port: /var/folders/gf/jtyfhkbx1175n_vr45yx0wtr0000gn/T/fire_emu_fff90dd1f755766b.sock"}}
+[debug] [2022-10-22T14:16:14.707Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-22T14:16:14.707Z] [worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-22T14:16:14.710Z] [worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: IDLE"}}
+[debug] [2022-10-22T14:16:14.710Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.21625ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.21625ms"}}
+[debug] [2022-10-22T14:16:14.710Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 200
+[debug] [2022-10-22T14:16:14.710Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:16:14 +0000] "GET /test HTTP/1.1" 200 12 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:16:14 +0000] \"GET /test HTTP/1.1\" 200 12 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-22T14:23:41.700Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/src/dbConnect.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/src/dbConnect.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:23:42.710Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:23:43.299Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:23:43.299Z] Building nodejs source
+[debug] [2022-10-22T14:23:43.299Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:23:43.299Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:23:43.384Z] Serving at port 9005
+
+[debug] [2022-10-22T14:23:43.428Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-22T14:23:43.430Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-22T14:23:43.434Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-10-22T14:23:43.434Z] [worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: FINISHING"}}
+[debug] [2022-10-22T14:23:43.438Z] [worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: exited"}}
+[debug] [2022-10-22T14:23:43.438Z] [worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-7c7a651f-557b-40c5-9147-f393d967c5bd]: FINISHED"}}
+[debug] [2022-10-22T14:29:43.050Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:29:44.052Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:29:44.702Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:29:44.702Z] Building nodejs source
+[debug] [2022-10-22T14:29:44.702Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:29:44.703Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:29:44.791Z] Serving at port 9005
+
+[debug] [2022-10-22T14:29:44.837Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-22T14:29:44.839Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-22T14:30:25.896Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:30:26.900Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:30:27.485Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:30:27.485Z] Building nodejs source
+[debug] [2022-10-22T14:30:27.485Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:30:27.486Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:30:27.571Z] Serving at port 9005
+
+[debug] [2022-10-22T14:30:27.587Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js
+Did you mean to import ../src/customers.js?
+[debug] [2022-10-22T14:30:27.587Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:
+     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyj ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js\nDid you mean to import ../src/customers.js?\n\u0000","position":78,"line":0,"column":78},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:\n     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyj ... \n                                         ^"}
+[debug] [2022-10-22T14:30:27.594Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js
+Did you mean to import ../src/customers.js? {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js\nDid you mean to import ../src/customers.js?"}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:30:47.990Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:30:47.992Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:30:47.992Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:30:47.992Z] Accepted request GET /saturday-challenge/us-central1/api/test --> us-central1-api
+[debug] [2022-10-22T14:30:47.995Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-22T14:30:47.995Z] [functions] Got req.url=/saturday-challenge/us-central1/api/test, mapping to path=/test {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/saturday-challenge/us-central1/api/test, mapping to path=/test"}}
+[debug] [2022-10-22T14:30:47.995Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-22T14:30:48.003Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-22T14:30:48.004Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-22T14:30:48.591Z] [runtime-status] [45615] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T14:30:48.592Z] [runtime-status] [45615] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:30:48.592Z] [runtime-status] [45615] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-22T14:30:48.592Z] [runtime-status] [45615] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:30:48.612Z] [runtime-status] [45615] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-22T14:30:48.612Z] [runtime-status] [45615] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-22T14:30:48.612Z] [runtime-status] [45615] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:30:48.613Z] [runtime-status] [45615] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T14:30:48.613Z] [runtime-status] [45615] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:30:48.613Z] [runtime-status] [45615] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45615] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[warn] ⚠  functions: Failed to initialize and load triggers. This shouldn't happen: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js
+Did you mean to import ../src/customers.js? {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Failed to initialize and load triggers. This shouldn't happen: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js\nDid you mean to import ../src/customers.js?"}}
+[warn] ⚠  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-10-22T14:30:48.629Z] [worker-us-central1-api-42615ae8-c46d-4fa4-b341-ebd958c2c444]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-42615ae8-c46d-4fa4-b341-ebd958c2c444]: exited"}}
+[debug] [2022-10-22T14:30:48.629Z] [worker-us-central1-api-42615ae8-c46d-4fa4-b341-ebd958c2c444]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-42615ae8-c46d-4fa4-b341-ebd958c2c444]: FINISHED"}}
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:31:07 +0000] "GET /test HTTP/1.1" - - "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:31:07 +0000] \"GET /test HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.29.2\""}}
+[debug] FirebaseError: Failed to load function.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsRuntimeWorker.js:152:24)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7) {"metadata":{"emulator":{"name":"functions"},"message":{"name":"FirebaseError","children":[],"exit":1,"message":"Failed to load function.","status":500}}}
+[debug] [2022-10-22T14:31:18.034Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-22T14:31:38.113Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:31:39.117Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:31:39.706Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:31:39.706Z] Building nodejs source
+[debug] [2022-10-22T14:31:39.706Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:31:39.707Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:31:39.791Z] Serving at port 9005
+
+[debug] [2022-10-22T14:31:39.807Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js
+[debug] [2022-10-22T14:31:39.807Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:
+     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyj ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js\n\u0000","position":78,"line":0,"column":78},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:\n     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyj ... \n                                         ^"}
+[debug] [2022-10-22T14:31:39.815Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js"}}
+[debug] [2022-10-22T14:31:54.707Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:31:55.710Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:31:56.271Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:31:56.271Z] Building nodejs source
+[debug] [2022-10-22T14:31:56.271Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:31:56.272Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:31:56.356Z] Serving at port 9005
+
+[debug] [2022-10-22T14:31:56.371Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js
+[debug] [2022-10-22T14:31:56.371Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:
+     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/src/custo ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js\n\u0000","position":78,"line":0,"column":78},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:\n     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/src/custo ... \n                                         ^"}
+[debug] [2022-10-22T14:31:56.378Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js"}}
+[debug] [2022-10-22T14:32:07.311Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:32:08.314Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:32:08.885Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:32:08.885Z] Building nodejs source
+[debug] [2022-10-22T14:32:08.885Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:32:08.886Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:32:08.969Z] Serving at port 9005
+
+[debug] [2022-10-22T14:32:08.985Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js
+Did you mean to import ../src/customers.js?
+[debug] [2022-10-22T14:32:08.985Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:
+     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyj ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js\nDid you mean to import ../src/customers.js?\n\u0000","position":78,"line":0,"column":78},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:\n     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyj ... \n                                         ^"}
+[debug] [2022-10-22T14:32:08.991Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js
+Did you mean to import ../src/customers.js? {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/tyjeff00/BocaCode/saturday-challenge/functions/src/customers' imported from /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js\nDid you mean to import ../src/customers.js?"}}
+[debug] [2022-10-22T14:32:33.437Z] File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/tyjeff00/BocaCode/saturday-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-22T14:32:34.441Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-22T14:32:35.027Z] > [functions] package.json contents: {
+  "name": "functions",
+  "type": "module",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-22T14:32:35.028Z] Building nodejs source
+[debug] [2022-10-22T14:32:35.028Z] Analyzing nodejs backend spec
+[debug] [2022-10-22T14:32:35.028Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-22T14:32:35.107Z] Serving at port 9005
+
+[debug] [2022-10-22T14:32:35.389Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-22T14:32:35.391Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] [hosting] Rewriting /test to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:32:46.585Z] >>> [apiv2][query] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 
+[debug] [2022-10-22T14:32:46.586Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:32:46.586Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:32:46.587Z] Accepted request GET /saturday-challenge/us-central1/api/test --> us-central1-api
+[debug] [2022-10-22T14:32:46.588Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-22T14:32:46.588Z] [functions] Got req.url=/saturday-challenge/us-central1/api/test, mapping to path=/test {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/saturday-challenge/us-central1/api/test, mapping to path=/test"}}
+[debug] [2022-10-22T14:32:46.588Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-22T14:32:46.597Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-22T14:32:46.598Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-22T14:32:47.098Z] [runtime-status] [45667] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T14:32:47.098Z] [runtime-status] [45667] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:32:47.098Z] [runtime-status] [45667] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-22T14:32:47.098Z] [runtime-status] [45667] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:32:47.116Z] [runtime-status] [45667] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-22T14:32:47.117Z] [runtime-status] [45667] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-22T14:32:47.117Z] [runtime-status] [45667] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:32:47.117Z] [runtime-status] [45667] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-22T14:32:47.117Z] [runtime-status] [45667] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-22T14:32:47.117Z] [runtime-status] [45667] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-22T14:32:47.275Z] [runtime-status] [45667] Functions runtime initialized. {"cwd":"/Users/tyjeff00/BocaCode/saturday-challenge/functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Functions runtime initialized. {\"cwd\":\"/Users/tyjeff00/BocaCode/saturday-challenge/functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-10-22T14:32:47.275Z] [runtime-status] [45667] Listening to port: /var/folders/gf/jtyfhkbx1175n_vr45yx0wtr0000gn/T/fire_emu_d72edebe658faed7.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [45667] Listening to port: /var/folders/gf/jtyfhkbx1175n_vr45yx0wtr0000gn/T/fire_emu_d72edebe658faed7.sock"}}
+[debug] [2022-10-22T14:32:47.311Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-22T14:32:47.311Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-22T14:32:47.314Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE"}}
+[debug] [2022-10-22T14:32:47.314Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.4305ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.4305ms"}}
+[debug] [2022-10-22T14:32:47.314Z] <<< [apiv2][status] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test 200
+[debug] [2022-10-22T14:32:47.314Z] <<< [apiv2][body] GET http://127.0.0.1:5001/saturday-challenge/us-central1/api/test [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:32:47 +0000] "GET /test HTTP/1.1" 200 12 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:32:47 +0000] \"GET /test HTTP/1.1\" 200 12 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /customers to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:35:15.724Z] >>> [apiv2][query] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers 
+[debug] [2022-10-22T14:35:15.724Z] >>> [apiv2][body] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers [stream]
+[debug] [2022-10-22T14:35:15.729Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:35:15.729Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:35:15.729Z] Accepted request POST /saturday-challenge/us-central1/api/customers --> us-central1-api
+[debug] [2022-10-22T14:35:15.730Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-22T14:35:15.731Z] [functions] Got req.url=/saturday-challenge/us-central1/api/customers, mapping to path=/customers {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/saturday-challenge/us-central1/api/customers, mapping to path=/customers"}}
+[debug] [2022-10-22T14:35:15.731Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-22T14:35:15.731Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-22T14:35:17.039Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE"}}
+[debug] [2022-10-22T14:35:17.039Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1289.271209ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1289.271209ms"}}
+[debug] [2022-10-22T14:35:17.041Z] <<< [apiv2][status] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers 201
+[debug] [2022-10-22T14:35:17.041Z] <<< [apiv2][body] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:35:17 +0000] "POST /customers HTTP/1.1" 201 69 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:35:17 +0000] \"POST /customers HTTP/1.1\" 201 69 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /customers to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:39:05.685Z] >>> [apiv2][query] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers 
+[debug] [2022-10-22T14:39:05.685Z] >>> [apiv2][body] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers [stream]
+[debug] [2022-10-22T14:39:05.686Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:39:05.686Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:39:05.686Z] Accepted request POST /saturday-challenge/us-central1/api/customers --> us-central1-api
+[debug] [2022-10-22T14:39:05.687Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-22T14:39:05.687Z] [functions] Got req.url=/saturday-challenge/us-central1/api/customers, mapping to path=/customers {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/saturday-challenge/us-central1/api/customers, mapping to path=/customers"}}
+[debug] [2022-10-22T14:39:05.687Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-22T14:39:05.687Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-22T14:39:05.846Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE"}}
+[debug] [2022-10-22T14:39:05.846Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 153.886583ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 153.886583ms"}}
+[debug] [2022-10-22T14:39:05.847Z] <<< [apiv2][status] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers 201
+[debug] [2022-10-22T14:39:05.847Z] <<< [apiv2][body] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:39:05 +0000] "POST /customers HTTP/1.1" 201 69 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:39:05 +0000] \"POST /customers HTTP/1.1\" 201 69 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /customers to http://127.0.0.1:5001/saturday-challenge/us-central1/api for local Function us-central1/api
+[debug] [2022-10-22T14:39:47.595Z] >>> [apiv2][query] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers 
+[debug] [2022-10-22T14:39:47.595Z] >>> [apiv2][body] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers [stream]
+[debug] [2022-10-22T14:39:47.597Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-22T14:39:47.597Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-22T14:39:47.597Z] Accepted request POST /saturday-challenge/us-central1/api/customers --> us-central1-api
+[debug] [2022-10-22T14:39:47.597Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-22T14:39:47.598Z] [functions] Got req.url=/saturday-challenge/us-central1/api/customers, mapping to path=/customers {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/saturday-challenge/us-central1/api/customers, mapping to path=/customers"}}
+[debug] [2022-10-22T14:39:47.598Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-22T14:39:47.598Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-22T14:39:47.735Z] [worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-06c11c1b-f8e1-4713-ae3b-d3223f67a970]: IDLE"}}
+[debug] [2022-10-22T14:39:47.736Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 134.0305ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 134.0305ms"}}
+[debug] [2022-10-22T14:39:47.737Z] <<< [apiv2][status] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers 201
+[debug] [2022-10-22T14:39:47.737Z] <<< [apiv2][body] POST http://127.0.0.1:5001/saturday-challenge/us-central1/api/customers [stream]
+[info] i  hosting: 127.0.0.1 - - [22/Oct/2022:14:39:47 +0000] "POST /customers HTTP/1.1" 201 69 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Oct/2022:14:39:47 +0000] \"POST /customers HTTP/1.1\" 201 69 \"-\" \"PostmanRuntime/7.29.2\""}}
